@@ -22,7 +22,7 @@
   "homepage": "https://github.com/crisbeto/angular-svg-round-progressbar",
   "files": [
     "dist/**/*",
-    "src/**/*",
+    "src/**/*"
   ],
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
