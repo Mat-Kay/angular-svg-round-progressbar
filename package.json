@@ -24,7 +24,7 @@
     "dist/**/*",
     "src/**/*"
   ],
-  "module": "src/index.ts",
+  "module": "src/index.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
