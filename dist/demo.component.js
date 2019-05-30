@@ -12,8 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var round_progress_1 = require("round-progress");
 var DemoComponent = /** @class */ (function () {
-    function DemoComponent(_ease) {
-        this._ease = _ease;
+    function DemoComponent(ease) {
         this.current = 27;
         this.max = 50;
         this.stroke = 15;
@@ -32,7 +31,7 @@ var DemoComponent = /** @class */ (function () {
         this.realCurrent = 0;
         // Kinda hacky way to get all of the easing functions at run-time, because it can
         // technically fetch something from up the prototype chain.
-        for (var prop in _ease) {
+        for (var prop in ease) {
             if (prop.toLowerCase().indexOf('ease') > -1) {
                 this.animations.push(prop);
             }

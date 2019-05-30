@@ -1,6 +1,5 @@
 import { RoundProgressEase } from 'round-progress';
 export declare class DemoComponent {
-    private _ease;
     current: number;
     max: number;
     stroke: number;
@@ -17,7 +16,7 @@ export declare class DemoComponent {
     animations: string[];
     gradient: boolean;
     realCurrent: number;
-    constructor(_ease: RoundProgressEase);
+    constructor(ease: RoundProgressEase);
     increment(amount?: number): void;
     getOverlayStyle(): {
         'top': string;

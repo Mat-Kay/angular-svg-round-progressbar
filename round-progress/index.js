@@ -10,9 +10,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
 var round_progress_component_1 = require("./round-progress.component");
-var round_progress_service_1 = require("./round-progress.service");
 var round_progress_ease_1 = require("./round-progress.ease");
 var round_progress_config_1 = require("./round-progress.config");
 var RoundProgressModule = /** @class */ (function () {
@@ -20,16 +18,14 @@ var RoundProgressModule = /** @class */ (function () {
     }
     RoundProgressModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule],
             declarations: [round_progress_component_1.RoundProgressComponent],
             exports: [round_progress_component_1.RoundProgressComponent],
-            providers: [round_progress_service_1.RoundProgressService, round_progress_ease_1.RoundProgressEase, round_progress_config_1.ROUND_PROGRESS_DEFAULTS_PROVIDER]
+            providers: [round_progress_ease_1.RoundProgressEase, round_progress_config_1.ROUND_PROGRESS_DEFAULTS_PROVIDER]
         })
     ], RoundProgressModule);
     return RoundProgressModule;
 }());
 exports.RoundProgressModule = RoundProgressModule;
-;
 __export(require("./round-progress.component"));
 __export(require("./round-progress.service"));
 __export(require("./round-progress.ease"));

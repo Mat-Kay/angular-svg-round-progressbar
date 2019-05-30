@@ -13,7 +13,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
+var common_1 = require("@angular/common");
 var DEGREE_IN_RADIANS = Math.PI / 180;
 var RoundProgressService = /** @class */ (function () {
     function RoundProgressService(document) {
@@ -62,7 +62,6 @@ var RoundProgressService = /** @class */ (function () {
         var arcSweep = (percentage <= 180 ? 0 : 1);
         return "M " + start + " A " + pathRadius + " " + pathRadius + " 0 " + arcSweep + " 0 " + end;
     };
-    ;
     /**
      * Converts polar cooradinates to Cartesian.
      * @param elementRadius  Radius of the wrapper element.
@@ -76,12 +75,11 @@ var RoundProgressService = /** @class */ (function () {
         return x + ' ' + y;
     };
     RoundProgressService = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Optional()), __param(0, core_1.Inject(platform_browser_1.DOCUMENT)),
+        core_1.Injectable({ providedIn: 'root' }),
+        __param(0, core_1.Optional()), __param(0, core_1.Inject(common_1.DOCUMENT)),
         __metadata("design:paramtypes", [Object])
     ], RoundProgressService);
     return RoundProgressService;
 }());
 exports.RoundProgressService = RoundProgressService;
-;
 //# sourceMappingURL=round-progress.service.js.map
