@@ -13,6 +13,7 @@ var core_1 = require("@angular/core");
 var round_progress_component_1 = require("./round-progress.component");
 var round_progress_ease_1 = require("./round-progress.ease");
 var round_progress_config_1 = require("./round-progress.config");
+var round_progress_service_1 = require("./round-progress.service");
 var RoundProgressModule = /** @class */ (function () {
     function RoundProgressModule() {
     }
@@ -20,7 +21,7 @@ var RoundProgressModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [round_progress_component_1.RoundProgressComponent],
             exports: [round_progress_component_1.RoundProgressComponent],
-            providers: [round_progress_ease_1.RoundProgressEase, round_progress_config_1.ROUND_PROGRESS_DEFAULTS_PROVIDER]
+            providers: [round_progress_ease_1.RoundProgressEase, round_progress_service_1.RoundProgressService, round_progress_config_1.ROUND_PROGRESS_DEFAULTS_PROVIDER]
         })
     ], RoundProgressModule);
     return RoundProgressModule;

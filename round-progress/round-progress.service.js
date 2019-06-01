@@ -75,7 +75,7 @@ var RoundProgressService = /** @class */ (function () {
         return x + ' ' + y;
     };
     RoundProgressService = __decorate([
-        core_1.Injectable({ providedIn: 'root' }),
+        core_1.Injectable(),
         __param(0, core_1.Optional()), __param(0, core_1.Inject(common_1.DOCUMENT)),
         __metadata("design:paramtypes", [Object])
     ], RoundProgressService);
